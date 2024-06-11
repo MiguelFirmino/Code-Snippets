@@ -28,6 +28,8 @@ def merge(left, right):
 
   return merged_array
 
-unsorted_array = [randint(-10, 10) for i in range(10)]
-print(f"Unsorted Array = {unsorted_array}")
-print(f"Sorted Array = {merge_sort(unsorted_array)}")
+sample_array = [randint(-10, 10) for i in range(10)]
+print(f"Unsorted array: {sample_array}")
+
+sorted_array = merge_sort(sample_array)
+print(f"Sorted array: {sorted_array}")
